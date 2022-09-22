@@ -27,8 +27,7 @@ namespace Full_GRASP_And_SOLID
             recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
 
 
-            // se uso Polimorfismo y LSP para que ConsolePrinter y FilePrinter puedan imprimir las mismas recetas de distintas 
-            // forma
+            // se uso Polimorfismo para que ConsolePrinter y FilePrinter puedan imprimir las mismas recetas de distintas formas
 
 
             IPrinter printer = new ConsolePrinter();
